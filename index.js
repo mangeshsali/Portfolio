@@ -7,3 +7,10 @@ var typed = new Typed("#auto-type", {
   loop: true,
   loopCount: Infinity,
 });
+
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});

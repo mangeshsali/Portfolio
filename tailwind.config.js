@@ -12,6 +12,9 @@ module.exports = {
         "black-grey": "#4b5563",
         "white-shade": "#f5f3ff",
       },
+      screens: {
+        sm: "480px",
+      },
     },
 
     plugins: [],

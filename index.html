@@ -23,7 +23,7 @@
       >
         <img src="./assets/logo.png" alt="logo" class="w-8 cursor-pointer" />
         <div class="links">
-          <ul class="flex">
+          <ul class="flex justify-between hidden md:flex">
             <a href="#Home">
               <li class="mx-5">Home</li>
             </a>
@@ -42,46 +42,79 @@
               </li>
             </a>
           </ul>
+          <div id="hamburger" class="md:hidden z-50">
+            <div><i class="fa-solid fa-bars z-"></i></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-regal-blue absolute top-0 left-0 w-full text-center p-10 text-white rounded-b-3xl"
+          >
+            <a href="#Home">
+              <li class="mx-5 my-4">Home</li>
+            </a>
+            <a href="#About">
+              <li class="mx-5 my-4">About</li>
+            </a>
+            <a href="#Projects">
+              <li class="mx-5 my-4">Projects</li>
+            </a>
+            <a href="#Contact">
+              <li class="mx-5 my-4">Contact</li>
+            </a>
+            <a href="#">
+              <li class="mx-5 my-4">
+                <i class="fa-solid fa-moon"></i>
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
     </nav>
     <section
-      class="bg-[url('./assets/herobgc.jpg')] h-full w-full bg-cover pb-[18rem]"
+      class="bg-[url('./assets/herobgc.jpg')] h-full w-full m-0 p-0 bg-cover pb-[11rem] max-w-full"
     >
-      <div class="flex flex-row w-[1100px] mx-auto mt-[150px]">
+      <div
+        class="flex flex-col flex-col-reverse lg:flex-row w-[1100px] mx-auto mt-[150px]"
+      >
         <!-- left  -->
         <div>
-          <p class="flex items-center" id="Home">
+          <p class="flex items-center m-3" id="Home">
             <img
               src="./assets/waving-hand.1da6fc7a.gif"
               alt=""
               loading="lazy"
               class="w-12"
-            /><span class="font-poppins text-[20px] mx-3 font-normal">
+            /><span
+              class="font-poppins text-[3rem] lg:text-[20px] mx-3 font-normal"
+            >
               Heyy...</span
             >
           </p>
-          <h1 class="font-poppins text-[56px] font-semibold my-3">
+          <h1
+            class="font-poppins text-[6rem] lg:text-[56px] font-semibold my-3 m-3"
+          >
             I'm Mangesh Sali
           </h1>
-          <p class="font-poppins text-[30px] font-light">
+          <p class="font-poppins text-[4rem] lg:text-[30px] font-light m-3">
             I am a
             <span
               id="auto-type"
-              class="font-poppins font-semibold text-[1.8rem] text-regal-blue"
+              class="font-poppins font-semibold text-[4rem] lg:text-[1.8rem] text-regal-blue"
             ></span>
           </p>
-          <p class="font-poppins text-[16px] text-black-grey my-5">
+          <p
+            class="font-poppins text-[2.5rem] lg:text-[16px] text-black-grey my-5 m-3"
+          >
             I focus on developing user-friendly web applications that meet the
             client's requirements, with attention to detail, scalability, and
             performance.
           </p>
           <button
-            class="bg-regal-blue py-2 px-5 rounded-md items-center font-poppins text-[17px] text-white my-5 hover:dark:bg-violet-800"
+            class="bg-regal-blue py-6 px-14 lg:py-2 rounded-lg items-center font-poppins text-[2.5rem] lg:text-[17px] text-white my-5 hover:dark:bg-violet-800 m-3"
           >
             About me >
           </button>
-          <div class="flex flex-col fixed left-12 bottom-6">
+          <div class="flex flex-col fixed left-12 bottom-6 hidden">
             <a
               href="https://www.linkedin.com/in/mangesh-sali-535b55224/"
               target="_blank"
@@ -113,8 +146,7 @@
             src="./assets/Propic1652556568004.png"
             alt=""
             loading="lazy"
-            width="55%"
-            class="ml-60 zoom-in-out-box"
+            class="mx-auto w-[65%]"
           />
         </div>
       </div>
@@ -124,7 +156,7 @@
           alt=""
           width="180px"
           height="100px"
-          class="absolute top-[550px] opacity-60"
+          class="absolute top-[550px] opacity-60 md:invisible sm:invisible lg:visible"
         />
       </div>
     </section>
@@ -132,25 +164,34 @@
     <!-- About me -->
 
     <section>
-      <div class="w-[1100px] mx-auto my-[0px]">
-        <h2 id="About" class="font-poppins font-medium text-[38px] text-center">
+      <div class="w-[1100px] mx-auto my-[0px] md:my-0">
+        <h2
+          id="About"
+          class="font-poppins font-medium text-[5rem] lg:text-[38px] text-center"
+        >
           About Me
         </h2>
 
-        <div class="container flex my-[5rem]">
+        <div class="container flex my-[2rem] flex-col lg:flex-row">
           <div class="left mr-[10rem]">
-            <img src="./assets/img.png" alt="" class="w-[80rem] rounded-full" />
+            <img
+              src="./assets/img.png"
+              alt=""
+              class="sm:w-[20rem] md:w-[22rem] lg:w-[80rem] rounded-full text-center"
+            />
           </div>
-          <div class="right">
-            <h2 class="font-poppins text-[2.5rem] font-semibold">
+          <div class="right ml-5">
+            <h2 class="font-poppins text-[5rem] lg:text-[2.5rem] font-semibold">
               Mangesh Sali
             </h2>
             <p
-              class="bg-white-shade text-[1rem] text-regal-blue w-[10rem] my-4"
+              class="bg-white-shade text-[2.5rem] lg:text-[1rem] text-regal-blue w-[24rem] lg:w-[10rem] my-4"
             >
               Frontend Developer
             </p>
-            <p class="font-poppins text-black-grey text-[1rem] leading-6">
+            <p
+              class="font-poppins text-black-grey text-[2.5rem] leading-normal lg:text-[1.2rem]"
+            >
               voluptatum unde repellat fugit! Blanditiis consequatur quidem
               dicta ratione iste, voluptatum vero! Culpa vero distinctio eveniet
               quasi et dolore perferendis dolor, quas porro vitae tempore
@@ -159,7 +200,7 @@
               officia eius sunt placeat doloribus?
             </p>
             <button
-              class="bg-regal-blue py-2 px-5 rounded-md items-center font-poppins text-[17px] text-white my-5 hover:dark:bg-violet-800"
+              class="bg-regal-blue py-6 px-14 lg:py-2 px-4 rounded-md items-center font-poppins text-[2.5rem] lg:text-[17px] text-white my-8 hover:dark:bg-violet-800"
             >
               Resume
             </button>
@@ -171,11 +212,11 @@
     <!-- tech stack -->
 
     <section>
-      <div class="w-[1100px] mx-auto my-[95px]">
+      <div class="w-[1100px] mx-auto my-[15px]">
         <h2 id="#" class="font-poppins font-medium text-[38px] text-center">
           Tech Stack
         </h2>
-        <div class="icons flex w-[900px] mx-auto my-[70px] justify-evenly">
+        <div class="icons flex w-[900px] mx-auto my-[50px] justify-evenly">
           <div class="one">
             <img
               src="./assets/html-5--v1.png"
@@ -241,7 +282,10 @@
         >
           Projects
         </h2>
-        <div class="flex flex-row justify-evenly my-8 gap-8">
+        <!-- <div class="flex flex-row justify-evenly my-8 gap-8"> -->
+        <div
+          class="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 my-8 gap-8"
+        >
           <a href="https://sorting-visualiz.netlify.app/" target="_blank"
             ><img
               src="./assets/sorting.png"
@@ -261,9 +305,9 @@
               alt=""
               class="w-[20rem] rounded-md cursor-pointer"
           /></a>
-        </div>
+          <!-- </div> -->
 
-        <div class="flex flex-row justify-evenly my-10 gap-8">
+          <!-- <div class="flex flex-row justify-evenly my-10 gap-8"> -->
           <a href="https://flipercolor.netlify.app/" target="_blank"
             ><img
               src="./assets/changecolor.png"
@@ -282,8 +326,8 @@
               alt=""
               class="w-[20rem] rounded-md cursor-pointer"
           /></a>
+          <!-- </div> -->
         </div>
-
         <div class="flex flex-row justify-evenly my-10 gap-8">
           <a href="https://temperature-calculate.netlify.app/" target="_blank"
             ><img
@@ -341,9 +385,9 @@
     <!-- footer -->
 
     <footer
-      class="bg-regal-blue text-white font-poppins text-[1rem] rounded-md pb-4 max-w-full"
+      class="bg-regal-blue text-white font-poppins text-[1rem] rounded-md pb-4 sm:w-full"
     >
-      <div class="w-[1100px] mx-auto">
+      <div class="max-w-[1100px] mx-auto">
         <div class="flex justify-between">
           <div>
             <h3 class="my-4 font-poppins font-semibold text-[1.8rem]">
