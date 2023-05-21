@@ -156,7 +156,7 @@
           alt=""
           width="180px"
           height="100px"
-          class="absolute top-[550px] opacity-60 md:invisible sm:invisible lg:visible"
+          class="absolute hidden top-[550px] opacity-60"
         />
       </div>
     </section>
@@ -200,7 +200,7 @@
               officia eius sunt placeat doloribus?
             </p>
             <button
-              class="bg-regal-blue py-6 px-14 lg:py-2 px-4 rounded-md items-center font-poppins text-[2.5rem] lg:text-[17px] text-white my-8 hover:dark:bg-violet-800"
+              class="bg-regal-blue py-6 px-14 lg:py-2 rounded-md items-center font-poppins text-[2.5rem] lg:text-[17px] text-white my-8 hover:dark:bg-violet-800"
             >
               Resume
             </button>
@@ -213,61 +213,66 @@
 
     <section>
       <div class="w-[1100px] mx-auto my-[15px]">
-        <h2 id="#" class="font-poppins font-medium text-[38px] text-center">
+        <h2
+          id="#"
+          class="font-poppins font-medium text-[5rem] lg:text-[38px] text-center"
+        >
           Tech Stack
         </h2>
-        <div class="icons flex w-[900px] mx-auto my-[50px] justify-evenly">
-          <div class="one">
-            <img
-              src="./assets/html-5--v1.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#F6F0F0] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/javascript--v1.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#FDF9E5] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/bootstrap.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#F0F0F6] my-6 cursor-pointer"
-            />
-          </div>
-          <div class="two">
-            <img
-              src="./assets/react--v1.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#EFF3F9] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/java.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#F6F0F0] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/c.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#EEF2F7] my-6 cursor-pointer"
-            />
-          </div>
-          <div class="three">
-            <img
-              src="./assets/css3.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#E8F2F8] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/tailwindcss.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#E6F2F7] my-6 cursor-pointer"
-            />
-            <img
-              src="./assets/Python.png"
-              alt=""
-              class="w-[95px] py-4 px-4 rounded-full bg-[#FDF9E5] my-6 cursor-pointer"
-            />
-          </div>
+        <div
+          class="icons grid grid-cols-3 w-[900px] mx-auto my-[50px] justify-evenly"
+        >
+          <!-- <div class="one"> -->
+          <img
+            src="./assets/html-5--v1.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#F6F0F0] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/javascript--v1.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#FDF9E5] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/bootstrap.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#F0F0F6] my-6 cursor-pointer"
+          />
+          <!-- </div> -->
+          <!-- <div class="two"> -->
+          <img
+            src="./assets/react--v1.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#EFF3F9] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/java.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#F6F0F0] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/c.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#EEF2F7] my-6 cursor-pointer"
+          />
+          <!-- </div> -->
+          <!-- <div class="three"> -->
+          <img
+            src="./assets/css3.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#E8F2F8] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/tailwindcss.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#E6F2F7] my-6 cursor-pointer"
+          />
+          <img
+            src="./assets/Python.png"
+            alt=""
+            class="w-[95px] py-4 px-4 rounded-full bg-[#FDF9E5] my-6 cursor-pointer"
+          />
+          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -278,7 +283,7 @@
       <div class="w-[1100px] mx-auto my-[95px]">
         <h2
           id="Projects"
-          class="font-poppins font-medium text-[38px] text-center"
+          class="font-poppins font-medium text-[5rem] lg:text-[38px] text-center"
         >
           Projects
         </h2>
@@ -290,20 +295,20 @@
             ><img
               src="./assets/sorting.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
 
           <a href="https://usabilitydemo.netlify.app/" target="_blank"
             ><img
               src="./assets/pro-1.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
           <a href="https://swiggydemo.netlify.app/" target="_blank"
             ><img
               src="./assets/swiggy.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
           <!-- </div> -->
 
@@ -312,30 +317,30 @@
             ><img
               src="./assets/changecolor.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
           <a href="https://keepdo.netlify.app/" target="_blank"
             ><img
               src="./assets/todo.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
           <a href="https://calcy-me.netlify.app/" target="_blank"
             ><img
               src="./assets/calculator.png"
               alt=""
-              class="w-[20rem] rounded-md cursor-pointer"
+              class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer"
           /></a>
           <!-- </div> -->
         </div>
-        <div class="flex flex-row justify-evenly my-10 gap-8">
-          <a href="https://temperature-calculate.netlify.app/" target="_blank"
-            ><img
-              src="./assets/temperature.png"
-              alt=""
-              class="w-[20rem] rounded-md cursor-pointer hover:dark:bg-black-800"
-          /></a>
-        </div>
+        <!-- <div class="flex flex-row justify-evenly my-10 gap-8"> -->
+        <a href="https://temperature-calculate.netlify.app/" target="_blank"
+          ><img
+            src="./assets/temperature.png"
+            alt=""
+            class="w-[50rem] lg:w-[20rem] rounded-md cursor-pointer hover:dark:bg-black-800"
+        /></a>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -343,13 +348,13 @@
       <div class="w-[1100px] mx-auto my-[95px]">
         <h2
           id="Contact"
-          class="font-poppins font-medium text-[38px] text-center"
+          class="font-poppins font-medium text-[5rem] text-[38px] text-center"
         >
           Contact Me
         </h2>
         <div class="flex">
           <div>
-            <img src="./assets/contact.png" alt="" />
+            <img src="./assets/contact.png" alt="" class="hidden lg:block" />
           </div>
 
           <div class="flex flex-col">
